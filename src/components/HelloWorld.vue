@@ -1,6 +1,7 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, reactive } from 'vue'
 const count = ref(0)
+const state = reactive({ count: 0 })
 defineProps({
   msg: {
     type: String,
@@ -22,6 +23,10 @@ defineProps({
 
 
 const isButtonDisabled = ref(-0)
+const seen = ref(false)
+onMounted(() => {
+  console.log(`the component is now mounted.`)
+})
 </script>
 
 <template>
@@ -35,6 +40,11 @@ const isButtonDisabled = ref(-0)
     <div :id="dynamicId">dynamicid</div>
 
     <button :disabled="isButtonDisabled">Button</button>
+    <p v-if="seen">Now you see me</p>
+
+    <button @click="state.count++">
+      state: {{ state.count }}
+    </button>
     <h3>
       You’ve successfully created a project with
       <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
