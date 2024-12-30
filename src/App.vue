@@ -16,6 +16,7 @@
       <RouterLink to="/about">Go to About</RouterLink>
       <RouterLink to="/contact">Go to Contact</RouterLink>
       <RouterLink to="/syntax">Go to Syntax</RouterLink>
+      <RouterLink to="/form-input">Go to Form input</RouterLink>
     </div>
     
   <main>

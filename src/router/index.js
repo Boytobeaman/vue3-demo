@@ -4,6 +4,7 @@ import Home from '../views/Home.vue';
 import About from '../views/About.vue';  
 import Contact from '../views/Contact.vue';  
 import Syntax from '../views/Syntax.vue';  
+import Forminput from '../views/Forminput.vue';  
   
 const routes = [  
   {  
@@ -25,6 +26,11 @@ const routes = [
     path: '/syntax',  
     name: 'Syntax',  
     component: Syntax  
+  },
+  {  
+    path: '/form-input',  
+    name: 'form-input',  
+    component: Forminput  
   } 
 ];  
   
