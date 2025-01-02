@@ -5,6 +5,7 @@ import About from '../views/About.vue';
 import Contact from '../views/Contact.vue';  
 import Syntax from '../views/Syntax.vue';  
 import Forminput from '../views/Forminput.vue';  
+import Lifecyclehooks from '../views/Lifecyclehooks.vue';  
   
 const routes = [  
   {  
@@ -31,6 +32,11 @@ const routes = [
     path: '/form-input',  
     name: 'form-input',  
     component: Forminput  
+  },
+  {  
+    path: '/lifecycle-hooks',  
+    name: 'lifecycle-hooks',  
+    component: Lifecyclehooks  
   } 
 ];  
   

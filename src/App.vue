@@ -17,6 +17,7 @@
       <RouterLink to="/contact">Go to Contact</RouterLink>
       <RouterLink to="/syntax">Go to Syntax</RouterLink>
       <RouterLink to="/form-input">Go to Form input</RouterLink>
+      <RouterLink to="/lifecycle-hooks">Go to Lifecycle Hooks</RouterLink>
     </div>
     
   <main>
