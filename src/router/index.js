@@ -6,6 +6,7 @@ import Contact from '../views/Contact.vue';
 import Syntax from '../views/Syntax.vue';  
 import Forminput from '../views/Forminput.vue';  
 import Lifecyclehooks from '../views/Lifecyclehooks.vue';  
+import Chat from '../views/Chat.vue';  
   
 const routes = [  
   {  
@@ -37,6 +38,11 @@ const routes = [
     path: '/lifecycle-hooks',  
     name: 'lifecycle-hooks',  
     component: Lifecyclehooks  
+  },
+  {  
+    path: '/chat',  
+    name: 'chat',  
+    component: Chat  
   } 
 ];  
   
